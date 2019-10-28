@@ -1,0 +1,48 @@
+body{
+	width: 100vw;
+  overflow-x: hidden !important;
+  // height: 100vh;
+  // overflow: hidden;
+}
+
+#app {
+  font-family: $font-family;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #fff;
+  width: 100vw;
+  background: #070e24;
+  min-height: 100vh;
+  // transform:scale(1);
+  overflow-x: hidden
+}
+
+.none{
+	display: none;
+}
+
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+.main-body {
+  width: 100vw;
+  height: 100vh;
+}
+
+
+// 特殊处理
+
+#app[data-lang=zh-tw]{
+  font-family: $zh-font-family !important;
+}
+// 越南语
+#app[data-lang=vi],#app[data-lang=vn]{
+  font-family: $vn-font-family !important;
+}
+// 繁体字
+#app[data-lang=zh]{
+  font-family: $zh-font-family !important;
+  font-weight: bold !important;
+}
+
+
